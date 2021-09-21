@@ -13,7 +13,6 @@ h4 {
 }
 div {
   padding: .25em;
-  margin: .75em 0 .75em 0;
   background-color: #DDD;
 }
 .material-icons {
@@ -65,8 +64,8 @@ div {
   padding: .5rem;
   display: grid;
   grid-gap: .5rem;
-  grid-template-columns: repeat(6, 1fr);
-  /*-- uncomment along with media queries
+/*  grid-template-columns: repeat(6, 1fr);
+ uncomment along with media queries
   grid-template-columns: 1fr;
   --*/
 }
@@ -90,5 +89,48 @@ div {
 }
 @media screen and (min-width: 1440px) {
   .grid-container{grid-template-columns: repeat(6, 1fr);}
+}
+--*/
+/*--
+.grid-container {
+  grid-template-areas:
+   "nav nav nav"
+   "hero hero hero"
+   "feat1 feat2 feat3"
+   "wall story1 story1"
+   "wall story2 story2"
+   "wall story3 story3"
+   "about about about"
+   "col1 col2 col2";
+}
+.one { grid-area: nav;}
+.two { grid-area: hero;}
+.three { grid-area: feat1;}
+.four { grid-area: feat2;}
+.five { grid-area: feat3;}
+.six { grid-area: wall;}
+.seven { grid-area: story1;}
+.eight { grid-area: story2;}
+.nine { grid-area: story3;}
+.ten { grid-area: about;}
+.eleven { grid-area: col1;}
+.twelve { grid-area: col2;}
+
+@media screen and (max-width: 990px) {
+  .grid-container {
+    grid-template-areas:
+     "nav"
+     "hero"
+     "feat1"
+     "feat2"
+     "feat3"
+     "wall"
+     "story1"
+     "story2"
+     "story3"
+     "about"
+     "col1"
+     "col2";
+  }
 }
 --*/
